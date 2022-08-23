@@ -15,11 +15,11 @@ export default {
 
 <style scoped lang="scss">
 div {
-    width: 80px;
-    margin-right: 10px;
+  width: 80px;
+  margin-right: 10px;
 
-    i {
-      color: white;
-    }
+  i {
+    color: white;
+  }
 }
 </style>

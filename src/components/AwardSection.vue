@@ -2,7 +2,10 @@
   <div id="award-section">
     <div class="container" id="_smaller-container">
       <h6>headache free</h6>
-      <h1>award winning <br> moving company</h1>
+      <h1>
+        award winning <br />
+        moving company
+      </h1>
       <div id="award-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam
         debitis laudantium assumenda quam repellat repellendus praesentium, a,
@@ -10,7 +13,7 @@
         cumque amet unde dolorem!
       </div>
       <!-- Prop for button in award section-->
-      <BaseButton text="read our testimonials" id="testimonial-award-section"/>
+      <BaseButton text="read our testimonials" id="testimonial-award-section" />
     </div>
   </div>
 </template>
@@ -39,7 +42,7 @@ export default {
     text-align: center;
   }
 
-  #award-text{
+  #award-text {
     color: $dove-grey;
   }
 
@@ -57,7 +60,7 @@ export default {
     margin-bottom: 25px;
   }
 
-  #testimonial-award-section{
+  #testimonial-award-section {
     margin-top: 25px;
   }
 }

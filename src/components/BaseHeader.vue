@@ -77,10 +77,11 @@ export default {
     top: 40px;
 
     li {
-      margin-right: 30px;
+      margin-right: 40px;
       color: $shark;
       font-weight: bold;
       margin-top: 15px;
+      font-size: 13px;
     }
 
     figure {

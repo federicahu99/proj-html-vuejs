@@ -1,5 +1,5 @@
 <template>
-  <div id="jumbotron"> 
+  <div id="jumbotron">
     <div id="jumbotron-upper">
       <div class="container" id="jumbotron-text">
         <h6>moving without the hassle</h6>

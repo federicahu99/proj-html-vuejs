@@ -1,14 +1,14 @@
 <template>
   <div>
-    <button type="button"> {{ text }}</button> 
+    <button type="button">{{ text }}</button>
   </div>
 </template>
 
 <script>
 export default {
-    name: "BaseButton",
-    props:{ text: String}  // prop for the text inside of the button
-} 
+  name: "BaseButton",
+  props: { text: String }, // prop for the text inside of the button
+};
 </script>
 
 <style scoped lang="scss">
@@ -16,15 +16,15 @@ export default {
 
 button {
   text-transform: capitalize;
-  padding: 5px 10px;
-  border-radius: 18px;
+  padding: 8px 12px;
+  border-radius: 22px;
   border-color: $denim;
   background-color: $denim;
   color: white;
   border: 0px;
-  
+
   &:hover,
-  &:active{
+  &:active {
     color: $mercury;
     background-color: dodgerblue;
   }
