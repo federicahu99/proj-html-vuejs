@@ -1,6 +1,6 @@
 <template>
   <div>
-    <BaseHeader  class="container"/>
+    <BaseHeader :menuHeader="menuHeader" />
   </div>
 </template>
 
@@ -11,6 +11,11 @@ export default {
   name: 'App',
   components: {
     BaseHeader
+  },
+  data() {
+    return {
+      menuHeader: [ "Home", "Rates", "Testimonials", "Blog", "Contact"]
+    }
   }
 }
 </script>
