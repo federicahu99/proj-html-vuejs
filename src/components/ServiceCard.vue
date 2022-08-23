@@ -29,7 +29,7 @@ export default {
   components: { BaseButton },
   methods: {
     GetImagine(service) {
-      return require(`../assets/images/${service.img}`); // img path
+      return require(`../assets/images/${service.img}`); // img path method
     },
   },
 };
@@ -55,13 +55,16 @@ h6 {
 
 .card {
   padding: 15px;
-  margin: 10px;
+  margin: 0px 10px 130px 10px;
   background-color: $mercury;
   border-radius: 5px;
 
   .card-text {
     margin: 15px 0;
     padding: 20px;
+    line-height: 200%;
+    font-size: 14px;
+    color: $dove-grey;
   }
 
   img{

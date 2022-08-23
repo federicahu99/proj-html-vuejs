@@ -1,6 +1,6 @@
 <template>
   <div id="services-section" class="container">
-    <h6>we are professional</h6>
+    <h5>we are professional</h5>
     <h1>full-service solution</h1>
     <div>
       <ServiceCard :fullService="fullService"/>
@@ -34,7 +34,7 @@ export default {
     margin-bottom: 60px;
   }
 
-  h6 {
+  h5 {
     color: $silver-chalice;
     text-transform: uppercase;
   }

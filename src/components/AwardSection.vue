@@ -1,6 +1,6 @@
 <template>
   <div id="award-section">
-    <div class="container" id="_smaller-container">
+    <div class="container" id="smaller-container">
       <h6>headache free</h6>
       <h1>
         award winning <br />
@@ -13,7 +13,7 @@
         cumque amet unde dolorem!
       </div>
       <!-- Prop for button in award section-->
-      <BaseButton text="read our testimonials" id="testimonial-award-section" />
+      <BaseButton text="read our testimonials" id="testimonial-award-section"/>
     </div>
   </div>
 </template>
@@ -33,17 +33,20 @@ export default {
 @import "../assets/sass/style.scss";
 
 #award-section {
-  height: 600px;
+  height: 660px;
   background-color: $mercury;
   padding: 140px 0;
 
-  #_smaller-container {
-    width: 700px;
+  #smaller-container {
+    width: 750px;
     text-align: center;
   }
 
   #award-text {
     color: $dove-grey;
+    line-height: 200%;
+    font-size: 15px;
+    margin-bottom: 50px;
   }
 
   h6 {
