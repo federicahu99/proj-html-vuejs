@@ -3,7 +3,7 @@
     <BaseHeader :menuHeader="menuHeader" />
     <BaseJumbotron />
     <AwardSection />
-    <ServicesSection fullService="fullService" />
+    <ServiceSection :fullService="fullService" />
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 import BaseHeader from "./components/BaseHeader.vue";
 import BaseJumbotron from "./components/BaseJumbotron.vue";
 import AwardSection from "./components/AwardSection.vue";
-import ServicesSection from "./components/ServicesSection.vue";
+import ServiceSection from "./components/ServiceSection.vue";
 
 export default {
   name: "App",
@@ -19,33 +19,33 @@ export default {
     BaseHeader,
     BaseJumbotron,
     AwardSection,
-    ServicesSection,
+    ServiceSection,
   },
   data() {
     return {
       menuHeader: [
         // header links
-        { name: "Home", link: "#" },
-        { name: "Rates", link: "#" },
-        { name: "Testimonials", link: "#" },
-        { name: "Blog", link: "#" },
-        { name: "Contact", link: "#" },
+        { link: "Home", url: "#" },
+        { link: "Rates", url: "#" },
+        { link: "Testimonials", url: "#" },
+        { link: "Blog", url: "#" },
+        { link: "Contact", url: "#" },
       ],
 
       menuFooterLeft: [
-        { name: "Home", link: "#" },
-        { name: "Rates", link: "#" },
-        { name: "Testimonials", link: "#" },
-        { name: "Blog", link: "#" },
-        { name: "Free Quote", link: "#" },
+        { link: "Home", url: "#" },
+        { link: "Rates", url: "#" },
+        { link: "Testimonials", url: "#" },
+        { link: "Blog", url: "#" },
+        { link: "Free Quote", url: "#" },
       ],
 
       menuFooterRight: [
-        { name: "Heading out to college?", link: "#" },
-        { name: "Moving your business?", link: "#" },
-        { name: "Outstainding quality?", link: "#" },
-        { name: "Cost of moving?", link: "#" },
-        { name: "Best Moving tips?", link: "#" },
+        { link: "Heading out to college?", url: "#" },
+        { link: "Moving your business?", url: "#" },
+        { link: "Outstainding quality?", url: "#" },
+        { link: "Cost of moving?", url: "#" },
+        { link: "Best Moving tips?", url: "#" },
       ],
 
       fullService: [
@@ -74,17 +74,17 @@ export default {
         //three testimonial + one btn
         {
           img: "avada-movers-janedoe-final-200x200.jpg",
-          name: "John Doe",
+          nameLastname: "John Doe",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
         },
         {
           img: "avada-movers-johndoe-final-200x200.jpg",
-          name: "Jane Doe",
+          nameLastname: "Jane Doe",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
         },
         {
           img: "avada-movers-johnsmith-final-200x200.jpg",
-          name: "John Smith",
+          nameLastname: "John Smith",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
         },
       ],

@@ -5,7 +5,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <div>
           <i class="fa-solid fa-phone"></i
-          ><span> Call us for a Free Quote: 1.800.5555.6789</span>
+          ><span> Call us for a Free Quote: 1.800.555.6789</span>
         </div>
         <div>
           <BaseSocial />
@@ -32,7 +32,7 @@
       >
         <ul class="d-flex justify-content-between align-items-center">
           <li v-for="(menu, i) in menuHeader" :key="i">
-            <a href="menu.link"> {{ menu.name }}</a>
+            <a :href="menu.url"> {{ menu.link }}</a>
           </li>
         </ul>
         <BaseButton text="Free Quote" />
@@ -52,7 +52,7 @@ export default {
     BaseButton,
   },
   props: {
-    menuHeader: Object,
+    menuHeader: Array,
   },
 };
 </script>
@@ -90,6 +90,10 @@ export default {
 
       img {
         width: 100%;
+
+        a:hover{
+          border-bottom: none;
+        }
       }
     }
   }

@@ -33,9 +33,9 @@ export default {
 @import "../assets/sass/style.scss";
 
 #award-section {
-  height: 500px;
+  height: 600px;
   background-color: $mercury;
-  padding: 95px 0;
+  padding: 140px 0;
 
   #_smaller-container {
     width: 700px;
@@ -57,7 +57,7 @@ export default {
     text-transform: capitalize;
     font-weight: bold;
     color: $lima;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
   }
 
   #testimonial-award-section {

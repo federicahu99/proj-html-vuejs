@@ -68,6 +68,10 @@ export default {
 
     a {
       color: $mercury;
+
+      &:hover{
+        border-bottom: 2px solid $white
+      }
     }
   }
 }
