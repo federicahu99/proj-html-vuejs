@@ -1,9 +1,9 @@
 <template>
   <div class="d-flex justify-content-between">
-    <i class="fa-brands fa-facebook-f"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-youtube"></i>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
   </div>
 </template>
 

@@ -53,14 +53,26 @@ export default {
 #upper-side {
   height: 40px;
   background-color: $lima;
-  color: white;
+  color: $mercury;
   font-size: 12px;
   padding-top: 10px;
 }
 
 #under-side {
     li {
-        margin-right: 15px;
+        margin-right: 30px;
+        color: $shark;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    figure {
+        width: 140px;
+        margin-top: 10px; 
+
+        img{
+            width: 100%;
+        }
     }
 }
 </style>
