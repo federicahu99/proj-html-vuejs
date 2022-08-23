@@ -21,10 +21,12 @@ button {
   border-color: $denim;
   background-color: $denim;
   color: white;
+  border: 0px;
   
   &:hover,
   &:active{
     color: $mercury;
+    background-color: dodgerblue;
   }
 }
 </style>
