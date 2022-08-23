@@ -19,18 +19,20 @@
       class="container d-flex justify-content-between align-items-center"
     >
       <figure>
-        <img
-          src="../assets/images/avada-movers-logo.png"
-          alt="Avada Movers logo"
-        />
+        <a href="#">
+          <img
+            src="../assets/images/avada-movers-logo.png"
+            alt="Avada Movers logo"
+          />
+        </a>
       </figure>
       <div
         id="menu-logo"
         class="d-flex justify-content-between align-items-center"
       >
         <ul class="d-flex justify-content-between align-items-center">
-          <li v-for="menu in menuHeader" :key="menu">
-            <a href="#"> {{ menu }}</a>
+          <li v-for="(menu, i) in menuHeader" :key="i">
+            <a href="menu.link"> {{ menu.name }}</a>
           </li>
         </ul>
         <BaseButton text="Free Quote" />
@@ -50,7 +52,7 @@ export default {
     BaseButton,
   },
   props: {
-    menuHeader: Array,
+    menuHeader: Object,
   },
 };
 </script>
