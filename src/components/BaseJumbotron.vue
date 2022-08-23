@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="jumbotron"> 
     <div id="jumbotron-upper">
       <div class="container" id="jumbotron-text">
         <h6>moving without the hassle</h6>
@@ -9,7 +9,7 @@
     </div>
     <div id="jumbotron-under">
       <div id="jumbotron-link" class="container">
-        <a href="#" >
+        <a href="#">
           <i class="fa-regular fa-paper-plane"></i> get a free quote online now!
         </a>
       </div>
@@ -47,7 +47,7 @@ export default {
 
     h6 {
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: bold;
       color: $dove-grey;
     }
@@ -56,21 +56,19 @@ export default {
 
 //Blue jumbotron section
 
-#jumbotron-under{
-    height: 120px;
-    background-color: $denim;
-    margin: 0 auto;
+#jumbotron-under {
+  height: 120px;
+  background-color: $denim;
+  margin: 0 auto;
 
-    #jumbotron-link{
-        width: 300px;
-        padding: 45px 0;
-        text-transform: uppercase;
+  #jumbotron-link {
+    width: 300px;
+    padding: 45px 0;
+    text-transform: uppercase;
 
-        a {
-            color: $mercury;
-        }
-        
-        
+    a {
+      color: $mercury;
     }
+  }
 }
 </style>
