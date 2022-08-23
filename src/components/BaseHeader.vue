@@ -14,16 +14,24 @@
     </div>
 
     <!-- logo menu btn of header -->
-    <div id="under-side" class="container d-flex justify-content-between align-items-center">
+    <div
+      id="under-side"
+      class="container d-flex justify-content-between align-items-center"
+    >
       <figure>
         <img
           src="../assets/images/avada-movers-logo.png"
           alt="Avada Movers logo"
         />
       </figure>
-      <div id="menu-logo" class="d-flex justify-content-between align-items-center">
+      <div
+        id="menu-logo"
+        class="d-flex justify-content-between align-items-center"
+      >
         <ul class="d-flex justify-content-between align-items-center">
-            <li v-for="menu in menuHeader" :key="menu"><a href="#"> {{ menu }}</a></li>
+          <li v-for="menu in menuHeader" :key="menu">
+            <a href="#"> {{ menu }}</a>
+          </li>
         </ul>
         <BaseButton text="Free Quote" />
       </div>
@@ -42,37 +50,45 @@ export default {
     BaseButton,
   },
   props: {
-    menuHeader: Array
-  }
+    menuHeader: Array,
+  },
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/sass/style.scss";
 
-#upper-side {
-  height: 40px;
-  background-color: $lima;
-  color: $mercury;
-  font-size: 12px;
-  padding-top: 10px;
-}
+#header {
+  position: relative;
 
-#under-side {
+  #upper-side {
+    height: 40px;
+    background-color: $lima;
+    color: $mercury;
+    font-size: 12px;
+    padding-top: 10px;
+  }
+
+  #under-side {
+    position: absolute;
+    left: 230px;
+    top: 40px;
+
     li {
-        margin-right: 30px;
-        color: $shark;
-        font-weight: bold;
-        margin-top: 15px;
+      margin-right: 30px;
+      color: $shark;
+      font-weight: bold;
+      margin-top: 15px;
     }
 
     figure {
-        width: 140px;
-        margin-top: 10px; 
+      width: 140px;
+      margin-top: 10px;
 
-        img{
-            width: 100%;
-        }
+      img {
+        width: 100%;
+      }
     }
+  }
 }
 </style>
