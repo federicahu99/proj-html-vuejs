@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex">
-    <div class="card" v-for="(service, i) in fullService" :key="i">
+  <div class="d-flex row g-lg-2 " id="card-section">
+    <div class="card d-flex offset-lg-1 col-lg-3 " v-for="(service, i) in fullService" :key="i">
       <figure>
         <img
           :src="GetImagine(service)"
@@ -54,14 +54,15 @@ h6 {
 }
 
 .card {
-  padding: 15px;
-  margin: 0px 10px 130px 10px;
+  padding: 10px;
+  margin-bottom: 110px;
+ 
   background-color: $mercury;
   border-radius: 5px;
 
   .card-text {
-    margin: 15px 0;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 0 20px;
     line-height: 200%;
     font-size: 14px;
     color: $dove-grey;

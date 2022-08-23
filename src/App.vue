@@ -1,25 +1,21 @@
 <template>
   <div>
     <BaseHeader :menuHeader="menuHeader" />
-    <BaseJumbotron />
+    <!-- <BaseJumbotron />
     <AwardSection />
-    <ServiceSection :fullService="fullService" />
+    <ServiceSection :fullService="fullService" /> -->
   </div>
 </template>
 
 <script>
 import BaseHeader from "./components/BaseHeader.vue";
-import BaseJumbotron from "./components/BaseJumbotron.vue";
-import AwardSection from "./components/AwardSection.vue";
-import ServiceSection from "./components/ServiceSection.vue";
+
 
 export default {
   name: "App",
   components: {
     BaseHeader,
-    BaseJumbotron,
-    AwardSection,
-    ServiceSection,
+
   },
   data() {
     return {
@@ -93,5 +89,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
 </style>

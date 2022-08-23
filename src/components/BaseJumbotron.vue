@@ -27,10 +27,12 @@ export default {
 @import "../assets/sass/style.scss";
 
 #jumbotron-upper {
-  height: 500px;
+  margin: -95px;
+  height: 550px;
   background-image: url(../assets/images/avada-movers-homeherobackground-final.jpg);
   background-position: center;
-  background-size: 130%;
+  background-size: 120%;
+  background-repeat: no-repeat;
 
   #jumbotron-text {
     width: 550px;

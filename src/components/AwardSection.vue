@@ -38,7 +38,7 @@ export default {
   padding: 140px 0;
 
   #smaller-container {
-    width: 750px;
+    width: 75%;
     text-align: center;
   }
 

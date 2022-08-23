@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-between">
+  <div class="d-flex justify-content-between" id="social">
     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
     <a href="#"><i class="fa-brands fa-twitter"></i></a>
     <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -8,18 +8,25 @@
 </template>
 
 <script>
+
 export default {
   name: "BaseSocial",
 };
 </script>
 
 <style scoped lang="scss">
-div {
-  width: 80px;
-  margin-right: 10px;
+@import "../assets/sass/style.scss";
+#social {
+  width: 130px;
+  font-size: 16px;
 
-  i {
-    color: white;
+  a {
+    color: $white;
+    margin: 0 5px;
+
+    &:hover{
+      color: $denim;
+    }
   }
 }
 </style>

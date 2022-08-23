@@ -27,6 +27,7 @@ button {
   &:active {
     color: $mercury;
     background-color: dodgerblue;
+    border: none;
   }
 }
 </style>
