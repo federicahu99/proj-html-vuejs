@@ -43,6 +43,7 @@
   </div>
 </template>
 
+
 <script>
 import BaseSocial from "./BaseSocial.vue";
 import BaseLogo from "./BaseLogo.vue";
@@ -72,19 +73,15 @@ export default {
   padding-top: 10px;
   line-height: 300%;
 }
-
 // down side of header (option menu)
-
 #down-side {
   background-color: none;
   padding: 10px;
-
   #menu-bar {
     font-size: 25px;
     color: $lima;
     transition: 0.4s;
     margin-left: -10px;
-
     li {
       margin-right: 20px;
       color: $shark;
@@ -100,10 +97,8 @@ export default {
         scale: 110%;
       }
     }
-
     a {
       color: $shark;
-
     }
     figure {
       width: 140px;

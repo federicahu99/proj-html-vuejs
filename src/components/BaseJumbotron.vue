@@ -47,13 +47,6 @@ export default {
       color: $shark;
       margin: 18px 0 ;
     }
-
-    h6 {
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: bold;
-      color: $dove-grey;
-    }
   }
 }
 

@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/sass/style.scss";
+@import "../assets/sass/_var.scss";
 
 button {
   font-size: 13px;
@@ -23,13 +23,17 @@ button {
   background-color: $denim;
   color: white;
   border: 0px;
+  transition: 0.4s;
 
   &:hover,
   &:active {
+    outline: 0;
     border: 2px solid $mercury; // rivedere !!!!!!!!!!!
     color: $mercury;
+    font-weight: bold;
     background-color: dodgerblue;
     border: none;
+    scale: 104%
   }
 }
 </style>

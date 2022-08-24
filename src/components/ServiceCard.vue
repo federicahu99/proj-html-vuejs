@@ -1,11 +1,12 @@
 <template>
-  <div class="d-flex row g-lg-2 " id="card-section">
-    <div class="card d-flex offset-lg-1 col-lg-3 " v-for="(service, i) in fullService" :key="i">
+  <div class="d-flex row g-lg-2" id="card-section">
+    <div
+      class="card d-flex offset-lg-1 col-lg-3"
+      v-for="(service, i) in fullService"
+      :key="i"
+    >
       <figure>
-        <img
-          :src="GetImagine(service)"
-          :alt="`${service.title} photo`"
-        />
+        <img :src="GetImagine(service)" :alt="`${service.title} photo`" />
       </figure>
       <div class="bg-white">
         <h3>{{ service.title }}</h3>
@@ -55,8 +56,7 @@ h6 {
 
 .card {
   padding: 10px;
-  margin-bottom: 110px;
- 
+  margin-bottom: 160px;
   background-color: $mercury;
   border-radius: 5px;
 
@@ -64,12 +64,12 @@ h6 {
     margin: 10px 0;
     padding: 0 20px;
     line-height: 200%;
-    font-size: 14px;
+    font-size: 12px;
     color: $dove-grey;
   }
 
-  img{
-       width: 100%;
+  img {
+    width: 100%;
   }
 }
 </style>

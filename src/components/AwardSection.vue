@@ -48,9 +48,7 @@ export default {
   }
 
   h6 {
-    text-transform: uppercase;
     color: $silver-chalice;
-    font-weight: bold;
     margin-bottom: 25px;
   }
 

@@ -1,5 +1,5 @@
 <template>
-  <div id="services-section" class="container">
+  <div id="services-section" class="_container">
     <h5>we are professional</h5>
     <h1>full-service solution</h1>
     <div>
@@ -31,7 +31,7 @@ export default {
     color: $lima;
     text-transform: capitalize;
     font-weight: bold;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
 
   h5 {

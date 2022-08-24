@@ -3,8 +3,8 @@
     <BaseHeader :menuHeader="menuHeader" />
     <BaseJumbotron />
     <AwardSection />
-    <!-- <ServiceSection :fullService="fullService" />  -->
-    
+    <ServiceSection :fullService="fullService" /> 
+    <SloganSection />
   </div>
 </template>
 
@@ -12,6 +12,8 @@
 import BaseHeader from "./components/BaseHeader.vue";
 import BaseJumbotron from "./components/BaseJumbotron.vue";
 import AwardSection from "./components/AwardSection.vue";
+import ServiceSection from "./components/ServiceSection.vue";
+import SloganSection from "./components/SloganSection.vue";
 
 
 export default {
@@ -19,7 +21,9 @@ export default {
   components: {
     BaseHeader,
     BaseJumbotron,
-    AwardSection
+    AwardSection,
+    ServiceSection,
+    SloganSection
   },
   data() {
     return {
