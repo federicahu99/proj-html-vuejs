@@ -7,6 +7,7 @@
     <SloganSection />
     <TestimonialSection :testimonials="testimonials"/>
     <FreeQuoteSection/>
+    <BaseFooter />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import ServiceSection from "./components/ServiceSection.vue";
 import SloganSection from "./components/SloganSection.vue";
 import TestimonialSection from "./components/TestimonialSection.vue";
 import FreeQuoteSection from "./components/FreeQuoteSection.vue";
+import BaseFooter from "./components/BaseFooter.vue";
 
 export default {
   name: "App",
@@ -29,6 +31,7 @@ export default {
     SloganSection,
     TestimonialSection,
     FreeQuoteSection,
+    BaseFooter
   },
   data() {
     return {

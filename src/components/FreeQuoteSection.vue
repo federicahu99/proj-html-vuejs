@@ -27,7 +27,6 @@ export default {
     margin-top: 50px;
     background-image: url(../assets/images/avada-movers-request-quote-background.jpg);
     padding: 80px 0;
-    height: 350px;
 
 h1 {
     color: $lima;
