@@ -42,7 +42,7 @@ export default {
 
     &:hover,
     &:active {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: bold;
       color: $lima;
     }

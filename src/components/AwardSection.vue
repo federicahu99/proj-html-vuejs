@@ -13,7 +13,7 @@
         cumque amet unde dolorem!
       </div>
       <!-- Prop for button in award section-->
-      <BaseButton text="read our testimonials" id="testimonial-award-section"/>
+      <BaseButton text="read our testimonials" id="testimonial-award-section" />
     </div>
   </div>
 </template>
@@ -36,9 +36,7 @@ export default {
   height: 690px;
   background-color: $mercury;
   padding: 140px 0;
-    text-align: center;
-
- 
+  text-align: center;
 
   #award-text {
     color: $dove-grey;

@@ -18,6 +18,7 @@ export default {
 #social {
   width: 130px;
   font-size: 16px;
+  margin: 0 auto;
 
   a {
     color: $white;

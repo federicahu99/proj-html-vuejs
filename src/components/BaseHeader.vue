@@ -34,7 +34,11 @@
               <a href="menu.url">{{ menu.link }}</a>
             </li>
             <div>
-              <BaseButton text="FREE QUOTE" class="d-none d-lg-block" id="header-button"/>
+              <BaseButton
+                text="FREE QUOTE"
+                class="d-none d-lg-block"
+                id="header-button"
+              />
             </div>
           </ul>
         </div>
@@ -105,7 +109,7 @@ export default {
       margin-top: 10px;
     }
   }
-  #header-button{
+  #header-button {
     padding-top: 5px;
     font-weight: bolder;
   }

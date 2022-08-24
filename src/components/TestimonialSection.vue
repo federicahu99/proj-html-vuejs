@@ -1,11 +1,11 @@
 <template>
   <div id="testimonials-section">
     <div class="container">
-    <h6>happy costumers</h6>
-    <h1>Testimonials</h1>
-    <RoundCard :results="testimonials" class="testimonial-cards" />
-    <BaseButton text="READ MORE TESTIMONIAL" />
-  </div>
+      <h6>happy costumers</h6>
+      <h1>Testimonials</h1>
+      <RoundCard :results="testimonials" class="testimonial-cards" />
+      <BaseButton text="READ MORE TESTIMONIAL" />
+    </div>
   </div>
 </template>
 
@@ -42,6 +42,5 @@ export default {
     font-weight: bold;
     margin-bottom: 30px;
   }
-
 }
 </style>

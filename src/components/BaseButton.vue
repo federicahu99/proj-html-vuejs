@@ -33,7 +33,7 @@ button {
     font-weight: bold;
     background-color: dodgerblue;
     border: none;
-    scale: 104%
+    scale: 104%;
   }
 }
 </style>

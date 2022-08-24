@@ -45,7 +45,7 @@ export default {
       text-transform: uppercase;
       font-weight: bold;
       color: $shark;
-      margin: 18px 0 ;
+      margin: 18px 0;
     }
   }
 }
@@ -66,8 +66,8 @@ export default {
     a {
       color: $mercury;
 
-      &:hover{
-        border-bottom: 2px solid $white
+      &:hover {
+        border-bottom: 2px solid $white;
       }
     }
   }

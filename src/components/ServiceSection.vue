@@ -3,7 +3,7 @@
     <h5>we are professional</h5>
     <h1>full-service solution</h1>
     <div>
-      <RectangularCard :results="fullService"/>
+      <RectangularCard :results="fullService" />
     </div>
   </div>
 </template>
