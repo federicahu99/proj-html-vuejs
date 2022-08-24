@@ -3,11 +3,15 @@
     <BaseHeader :menuHeader="menuHeader" />
     <BaseJumbotron />
     <AwardSection />
-    <ServiceSection :fullService="fullService" /> 
+    <ServiceSection :fullService="fullService" />
     <SloganSection />
-    <TestimonialSection :testimonials="testimonials"/>
-    <FreeQuoteSection/>
-    <BaseFooter />
+    <TestimonialSection :testimonials="testimonials" />
+    <FreeQuoteSection />
+    <BaseFooter
+      :menuFooterLeft="menuFooterLeft"
+      :menuFooterRight="menuFooterRight"
+      :menuFooterBottom="menuFooterBottom"
+    />
   </div>
 </template>
 
@@ -31,7 +35,7 @@ export default {
     SloganSection,
     TestimonialSection,
     FreeQuoteSection,
-    BaseFooter
+    BaseFooter,
   },
   data() {
     return {
@@ -58,6 +62,13 @@ export default {
         { link: "Outstainding quality?", url: "#" },
         { link: "Cost of moving?", url: "#" },
         { link: "Best Moving tips?", url: "#" },
+      ],
+
+      menuFooterBottom: [
+        { link: "Copyright 2012 - 2020", url: "#" },
+        { link: "Avada Theme by ThemeFusion", url: "#" },
+        { link: "All Right Reserved", url: "#" },
+        { link: "Powered by WordPress", url: "#" },
       ],
 
       fullService: [
@@ -105,6 +116,3 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>

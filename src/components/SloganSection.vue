@@ -1,30 +1,35 @@
 <template>
-  <div id="slogan-section" >
-<div class="row me-5">
-    <div id="slogan-content" class="container">
-      <div class="col pe-md-1">
-      <h6 class="d-none d-md-block">we remove the headache from moving</h6>
-      <h1>move with ease</h1>
-      <div id="line"></div>
-      <div id="slogan-text" class="d-none d-md-block">
-        With our super simple service we can take you from getting a quote, right
-        through to being in your new home with all of your belongings securely
-        packed and safely delivered, even in the rooms of your choice.
+  <div id="slogan-section">
+    <div class="row">
+      <div id="slogan-content" class="container">
+        <div class="col pe-md-1">
+          <h6 class="d-none d-md-block">we remove the headache from moving</h6>
+          <h1>move with ease</h1>
+          <div id="line"></div>
+          <div id="slogan-text" class="d-none d-md-block">
+            With our super simple service we can take you from getting a quote,
+            right through to being in your new home with all of your belongings
+            securely packed and safely delivered, even in the rooms of your
+            choice.
+          </div>
+          <BaseButton
+            text="get a free quote now"
+            id="slogan-button"
+            class="d-none d-sm-block"
+          />
+        </div>
       </div>
-      <BaseButton text="get a free quote now" id="slogan-button" class="d-none d-sm-block"/>
     </div>
-    </div>
-  </div>
   </div>
 </template>
 
 <script>
-import BaseButton from "./BaseButton.vue"
+import BaseButton from "./BaseButton.vue";
 export default {
   name: "SloganSection",
   components: {
-    BaseButton
-  }
+    BaseButton,
+  },
 };
 </script>
 
@@ -57,7 +62,7 @@ export default {
 
   h6 {
     color: $white;
-     font-size: 11px;
+    font-size: 11px;
   }
 
   #line {
@@ -68,7 +73,7 @@ export default {
 
   #slogan-text {
     font-size: 12px;
-    margin: auto;
+    margin:  0 auto;
   }
 
   #slogan-button {

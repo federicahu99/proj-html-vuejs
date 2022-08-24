@@ -6,12 +6,16 @@
       :key="i"
     >
       <figure>
-        <img :src="GetImagine(result)" :alt="`${result.title}photo`" class="img-fluid" />
+        <img
+          :src="GetImagine(result)"
+          :alt="`${result.title}photo`"
+          class="img-fluid"
+        />
       </figure>
       <div class="bg-white">
-        <h3>{{ result.title  }}</h3>
+        <h3>{{ result.title }}</h3>
         <div class="card-text">
-          {{ result.text}}
+          {{ result.text }}
         </div>
         <BaseButton :text="result.btn" class="m-4" />
       </div>
@@ -61,6 +65,5 @@ h3 {
     color: $dove-grey;
     text-align: center;
   }
-
 }
 </style>

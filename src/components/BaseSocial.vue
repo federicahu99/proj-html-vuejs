@@ -8,7 +8,6 @@
 </template>
 
 <script>
-
 export default {
   name: "BaseSocial",
 };
@@ -25,7 +24,7 @@ export default {
     margin: 0 5px;
     transition: 0.5s;
 
-    &:hover{
+    &:hover {
       color: $denim;
       scale: 150%;
     }
