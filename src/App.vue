@@ -6,6 +6,7 @@
     <ServiceSection :fullService="fullService" /> 
     <SloganSection />
     <TestimonialSection :testimonials="testimonials"/>
+    <FreeQuoteSection/>
   </div>
 </template>
 
@@ -16,7 +17,7 @@ import AwardSection from "./components/AwardSection.vue";
 import ServiceSection from "./components/ServiceSection.vue";
 import SloganSection from "./components/SloganSection.vue";
 import TestimonialSection from "./components/TestimonialSection.vue";
-
+import FreeQuoteSection from "./components/FreeQuoteSection.vue";
 
 export default {
   name: "App",
@@ -26,7 +27,8 @@ export default {
     AwardSection,
     ServiceSection,
     SloganSection,
-    TestimonialSection
+    TestimonialSection,
+    FreeQuoteSection,
   },
   data() {
     return {

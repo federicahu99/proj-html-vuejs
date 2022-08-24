@@ -1,7 +1,7 @@
 <template>
-  <div class="d-flex row " id="card-section">
+  <div class="d-flex row" id="card-section">
     <div
-      class="testimonial-card col-4"
+      class="testimonial-card col-6 col-md-4 "
       v-for="(result, i) in results"
       :key="i"
     >
@@ -45,20 +45,19 @@ h3 {
 }
 
 .testimonial-card {
-  padding: 10px;
-  margin-bottom: 160px;
 
   .card-text {
     margin: 10px 0;
     padding: 0 20px;
     line-height: 200%;
-    font-size: 12px;
+    font-size: 10px;
     color: $dove-grey;
     text-align: center
   }
 
   img {
     border-radius: 50%;
+    width: 40%;
   }
 
   #container-img-testimonial {

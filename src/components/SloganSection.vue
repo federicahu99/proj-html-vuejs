@@ -3,7 +3,7 @@
 <div class="row me-5">
     <div id="slogan-content" class="container">
       <div class="col pe-md-1">
-      <h6>we remove the headache from moving</h6>
+      <h6 class="d-none d-md-block">we remove the headache from moving</h6>
       <h1>move with ease</h1>
       <div id="line"></div>
       <div id="slogan-text" class="d-none d-md-block">
@@ -11,7 +11,7 @@
         through to being in your new home with all of your belongings securely
         packed and safely delivered, even in the rooms of your choice.
       </div>
-      <BaseButton text="get a free quote now" id="slogan-button"/>
+      <BaseButton text="get a free quote now" id="slogan-button" class="d-none d-sm-block"/>
     </div>
     </div>
   </div>
