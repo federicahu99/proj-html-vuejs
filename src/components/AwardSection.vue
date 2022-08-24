@@ -1,6 +1,6 @@
 <template>
   <div id="award-section">
-    <div class="container" id="smaller-container">
+    <div class="container">
       <h6>headache free</h6>
       <h1>
         award winning <br />
@@ -33,14 +33,12 @@ export default {
 @import "../assets/sass/style.scss";
 
 #award-section {
-  height: 660px;
+  height: 690px;
   background-color: $mercury;
   padding: 140px 0;
-
-  #smaller-container {
-    width: 75%;
     text-align: center;
-  }
+
+ 
 
   #award-text {
     color: $dove-grey;
