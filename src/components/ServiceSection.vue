@@ -3,17 +3,17 @@
     <h5>we are professional</h5>
     <h1>full-service solution</h1>
     <div>
-      <ServiceCard :fullService="fullService"/>
+      <RectangularCard :results="fullService"/>
     </div>
   </div>
 </template>
 
 <script>
-import ServiceCard from "./ServiceCard.vue";
+import RectangularCard from "./RectangularCard.vue";
 
 export default {
   name: "ServiceSection",
-  components: { ServiceCard },
+  components: { RectangularCard },
   props: {
     fullService: Array,
   },

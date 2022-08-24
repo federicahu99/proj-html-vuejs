@@ -5,6 +5,7 @@
     <AwardSection />
     <ServiceSection :fullService="fullService" /> 
     <SloganSection />
+    <TestimonialSection :testimonials="testimonials"/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import BaseJumbotron from "./components/BaseJumbotron.vue";
 import AwardSection from "./components/AwardSection.vue";
 import ServiceSection from "./components/ServiceSection.vue";
 import SloganSection from "./components/SloganSection.vue";
+import TestimonialSection from "./components/TestimonialSection.vue";
 
 
 export default {
@@ -23,7 +25,8 @@ export default {
     BaseJumbotron,
     AwardSection,
     ServiceSection,
-    SloganSection
+    SloganSection,
+    TestimonialSection
   },
   data() {
     return {
@@ -56,7 +59,7 @@ export default {
         // three card service section + three btn
         {
           img: "avada-movers-serviceonephoto-final-400x255.jpg",
-          title: "two man lift",
+          title: "two man lifting",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
           btn: "read more",
         },
@@ -78,17 +81,17 @@ export default {
         //three testimonial + one btn
         {
           img: "avada-movers-janedoe-final-200x200.jpg",
-          nameLastname: "John Doe",
+          nameLastname: "jane doe",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
         },
         {
           img: "avada-movers-johndoe-final-200x200.jpg",
-          nameLastname: "Jane Doe",
+          nameLastname: "john doe",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
         },
         {
           img: "avada-movers-johnsmith-final-200x200.jpg",
-          nameLastname: "John Smith",
+          nameLastname: "john smith",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
         },
       ],

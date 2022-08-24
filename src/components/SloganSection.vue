@@ -1,6 +1,6 @@
 <template>
   <div id="slogan-section" >
-<div class="row">
+<div class="row me-5">
     <div id="slogan-content" class="container">
       <div class="col pe-md-1">
       <h6>we remove the headache from moving</h6>
@@ -38,7 +38,7 @@ export default {
   padding-top: 115px;
 
   #slogan-content {
-    width: 50%;
+    max-width: 30%;
     border: 12.5px solid $hippie-green;
     padding: 35px 10px;
     background-color: $lima;
@@ -68,7 +68,6 @@ export default {
 
   #slogan-text {
     font-size: 12px;
-    width: 90%;
     margin: auto;
   }
 

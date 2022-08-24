@@ -2,18 +2,18 @@
   <div class="d-flex row g-lg-2" id="card-section">
     <div
       class="card d-flex offset-lg-1 col-lg-3"
-      v-for="(service, i) in fullService"
+      v-for="(result, i) in results"
       :key="i"
     >
       <figure>
-        <img :src="GetImagine(service)" :alt="`${service.title} photo`" />
+        <img :src="GetImagine(result)" :alt="`${result.title}photo`" />
       </figure>
       <div class="bg-white">
-        <h3>{{ service.title }}</h3>
+        <h3>{{ result.title  }}</h3>
         <div class="card-text">
-          {{ service.text }}
+          {{ result.text}}
         </div>
-        <BaseButton :text="service.btn" class="m-4" />
+        <BaseButton :text="result.btn" class="m-4" />
       </div>
     </div>
   </div>
@@ -23,14 +23,14 @@
 import BaseButton from "./BaseButton.vue";
 
 export default {
-  name: "ServiceCard",
+  name: "BaseCard",
   props: {
-    fullService: Array,
+    results: Array,
   },
   components: { BaseButton },
   methods: {
-    GetImagine(service) {
-      return require(`../assets/images/${service.img}`); // img path method
+    GetImagine(result) {
+      return require(`../assets/images/${result.img}`); // img path method
     },
   },
 };
@@ -44,14 +44,7 @@ h3 {
   color: $denim;
   margin: 15px 0;
   font-weight: bold;
-}
-
-h6 {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-  color: $dove-grey;
-  margin-top: 150px;
+  text-align: center;
 }
 
 .card {
@@ -66,6 +59,7 @@ h6 {
     line-height: 200%;
     font-size: 12px;
     color: $dove-grey;
+    text-align: center;
   }
 
   img {
