@@ -23,9 +23,11 @@ export default {
   a {
     color: $white;
     margin: 0 5px;
+    transition: 0.5s;
 
     &:hover{
       color: $denim;
+      scale: 150%;
     }
   }
 }

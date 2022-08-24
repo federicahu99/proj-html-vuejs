@@ -15,6 +15,7 @@ export default {
 @import "../assets/sass/style.scss";
 
 button {
+  font-size: 13px;
   text-transform: capitalize;
   padding: 8px 12px;
   border-radius: 22px;
@@ -25,6 +26,7 @@ button {
 
   &:hover,
   &:active {
+    border: 2px solid $mercury; // rivedere !!!!!!!!!!!
     color: $mercury;
     background-color: dodgerblue;
     border: none;

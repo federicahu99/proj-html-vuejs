@@ -1,7 +1,7 @@
 <template>
   <div>
     <BaseHeader :menuHeader="menuHeader" />
-    <!-- <BaseJumbotron />
+    <BaseJumbotron />
     <AwardSection />
     <ServiceSection :fullService="fullService" /> -->
   </div>
@@ -9,13 +9,14 @@
 
 <script>
 import BaseHeader from "./components/BaseHeader.vue";
+import BaseJumbotron from "./components/BaseJumbotron.vue";
 
 
 export default {
   name: "App",
   components: {
     BaseHeader,
-
+    BaseJumbotron,
   },
   data() {
     return {

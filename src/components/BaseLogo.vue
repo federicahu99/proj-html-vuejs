@@ -17,7 +17,12 @@ export default {
     display:block;
     
     img{
-      width: 110px;
+      width: 140px;
+      transition: 0.5s;
+
+      &:hover{
+        scale: 110%;
+      }
     }
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div id="jumbotron">
+    <!-- first part of jumbo -->
     <div id="jumbotron-upper">
       <div class="container" id="jumbotron-text">
         <h6>moving without the hassle</h6>
@@ -7,6 +8,7 @@
         <h6>professional service with quality and custumer satisfaction</h6>
       </div>
     </div>
+    <!-- second part of jumbo -->
     <div id="jumbotron-under">
       <div id="jumbotron-link" class="container">
         <a href="#">
@@ -27,24 +29,23 @@ export default {
 @import "../assets/sass/style.scss";
 
 #jumbotron-upper {
-  margin: -95px;
-  height: 550px;
+  margin-top: -88px;
+  height: 450px;
   background-image: url(../assets/images/avada-movers-homeherobackground-final.jpg);
   background-position: center;
-  background-size: 120%;
+  background-size: cover;
   background-repeat: no-repeat;
 
   #jumbotron-text {
-    width: 550px;
-    height: 500px;
+    width: 80%;
     text-align: center;
-    padding: 203px 10px;
+    padding-top: 145px;
 
     h1 {
       text-transform: uppercase;
       font-weight: bold;
       color: $shark;
-      margin: 18px;
+      margin: 18px 0 ;
     }
 
     h6 {
@@ -64,7 +65,8 @@ export default {
   margin: 0 auto;
 
   #jumbotron-link {
-    width: 300px;
+    text-align: center;
+    width: 80%;
     padding: 45px 0;
     text-transform: uppercase;
 
