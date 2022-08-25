@@ -6,7 +6,7 @@
     <ServiceSection :fullService="fullService" />
     <SloganSection />
     <TestimonialSection :testimonials="testimonials" />
-    <FreeQuoteSection />
+    <FreeQuoteSection :countries="countries" />
     <BaseFooter
       :menuFooterLeft="menuFooterLeft"
       :menuFooterRight="menuFooterRight"
@@ -59,7 +59,7 @@ export default {
       menuFooterRight: [
         { link: "Heading out to college?", url: "#" },
         { link: "Moving your business?", url: "#" },
-        { link: "Outstainding quality?", url: "#" },
+        { link: "Outstaind quality?", url: "#" },
         { link: "Cost of moving?", url: "#" },
         { link: "Best Moving tips?", url: "#" },
       ],
@@ -110,6 +110,60 @@ export default {
           nameLastname: "john smith",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
         },
+      ],
+
+      // form states
+      countries: [
+        "Alabama (AL)",
+        "Alaska (AK)",
+        "Arizona (AZ)",
+        "Arkansas (AR)",
+        "California (CA)",
+        "Colorado (CO)",
+        "Connecticut (CT)",
+        "Delaware (DE)",
+        "Florida (FL)",
+        "Georgia (GA)",
+        "Hawaii (HI)",
+        "Idaho (ID)",
+        "Illinois (IL)",
+        "Indiana (IN)",
+        "Iowa (IA)",
+        "Kansas (KS)",
+        "Kentucky (KY)",
+        "Louisiana (LA)",
+        "Maine (ME)",
+        "Maryland (MD)",
+        "Massachusetts (MA)",
+        "Michigan (MI)",
+        "Minnesota (MN)",
+        "Mississippi (MS)",
+        "Missouri (MO)",
+        "Montana (MT)",
+        "Nebraska (NE)",
+        "Nevada (NV)",
+        "New Hampshire (NH)",
+        "New Jersey (NJ)",
+        "New Mexico (NM)",
+        "New York (NY)",
+        "North Carolina (NC)",
+        "North Dakota (ND)",
+        "Ohio (OH)",
+        "Oklahoma (OK)",
+        "Oregon (OR)",
+        "Pennsylvania (PA)",
+        "Rhode Island (RI)",
+        "South Carolina (SC)",
+        "South Dakota (SD)",
+        "Tennessee (TN)",
+        "Texas (TX)",
+        "Utah (UT)",
+        "Vermont (VT)",
+        "Virginia (VA)",
+        "Washington (WA)",
+        "West Virginia (WV)",
+        "Wisconsin (WI)",
+        "Wyoming (WY)",
       ],
     };
   },

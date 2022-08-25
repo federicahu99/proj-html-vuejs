@@ -1,8 +1,8 @@
 <template>
-  <div id="slogan-section">
-    <div class="row">
-      <div id="slogan-content" class="container">
-        <div class="col pe-md-1">
+  <div id="slogan-section" >
+    <div class="row container">
+      <div id="slogan-content" >
+        <div class="col">
           <h6 class="d-none d-md-block">we remove the headache from moving</h6>
           <h1>move with ease</h1>
           <div id="line"></div>
@@ -43,12 +43,13 @@ export default {
   padding-top: 115px;
 
   #slogan-content {
-    max-width: 30%;
+    max-width: 40%;
     border: 12.5px solid $hippie-green;
-    padding: 35px 10px;
+    padding: 25px 5px;
     background-color: $lima;
     color: $white;
     text-align: center;
+    margin: auto 10% auto auto;
   }
 
   h1 {

@@ -2,25 +2,25 @@
   <div id="quote-section">
     <div class="container">
       <h1>request a free quote</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, esse saepe
-        quo, fugiat tempora odit accusantium maiores dolores omnis quam sint
-        assumenda dignissimos blanditiis consectetur delectus exercitationem
-        distinctio labore doloremque!
-      </p>
-      <BaseButton text="CLICK HERE" id="button-quote" />
+    </div>
+    <div class="container">
+    <BaseForm :countries="countries"/>
     </div>
   </div>
 </template>
 
 <script>
-import BaseButton from "./BaseButton.vue";
+
+import BaseForm from "./BaseForm.vue";
 
 export default {
   name: "FreeQuoteSection",
   components: {
-    BaseButton,
+    BaseForm
   },
+  props: {
+    countries: Array
+  }
 };
 </script>
 

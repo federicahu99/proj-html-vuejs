@@ -110,19 +110,18 @@ export default {
       transition: 0.4s;
       // effects on header options
       &:hover ,
-      &:hover  {
+      &:active  {
         margin-left: 5px;
         border-bottom: 1.5px solid $lima;
-        color: $lima;
-        background-color: #ffffff;
+        font-size: 15px;
 
         i {
           font-size: 20px;
         }
       }
-    }
     a {
       color: $shark;
+    }
     }
     figure {
       width: 140px;
