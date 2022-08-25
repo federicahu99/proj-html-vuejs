@@ -5,12 +5,14 @@
       v-for="(result, i) in results"
       :key="i"
     >
+      <!-- img part -->
       <figure
         class="d-flex justify-content-center"
         id="container-img-testimonial"
       >
         <img :src="GetImagine(result)" :alt="`${result.nameLastname}photo`" />
       </figure>
+      <!-- title and textes -->
       <div>
         <h3>{{ result.nameLastname }}</h3>
         <p>

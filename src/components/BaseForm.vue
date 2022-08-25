@@ -2,6 +2,7 @@
   <div>
     <form class="row g-3" @keyup.enter="registerRequest">
       <div class="col-md-6">
+        <!-- email -->
         <label for="inputEmail4" class="form-label m-2">Email</label>
         <input
           type="email"
@@ -12,27 +13,28 @@
         />
       </div>
       <div class="col-md-6">
-        <label for="inputAddress" class="form-label m-2"
-          >Name and Lastname</label
-        >
+        <!-- Name lastname -->
+        <label for="fullname" class="form-label m-2">Name and Lastname</label>
         <input
           type="text"
           class="form-control"
-          id="inputAddress"
+          id="fullname"
           placeholder="Sam King"
           v-model="nameSurname"
         />
       </div>
       <div class="col-md-6">
-        <label for="inputAddress" class="form-label m-2">Phone number</label>
+        <!-- phone -->
+        <label for="phone-number" class="form-label m-2">Phone number</label>
         <input
           type="text"
           class="form-control"
-          id="inputAddress"
+          id="phone-number"
           placeholder="917-813-8861"
           v-model="phone"
         />
       </div>
+      <!-- city -->
       <div class="col-md-6">
         <label for="inputCity" class="form-label m-2">City</label>
         <input
@@ -43,6 +45,7 @@
           v-model="city"
         />
       </div>
+      <!-- state select -->
       <div class="col-12" id="states">
         <label for="inputState" class="form-label m-2">State </label>
         <select id="inputState" class="form-select" v-model="state">
@@ -90,8 +93,10 @@ export default {
       ) {
         alert("All the fields MUST be compiled");
       } else {
-        alert("Request send successfully! We will Contact you within 3 working days!");
-          (this.email = ""),
+        alert(
+          "Request send successfully! We will Contact you within 3 working days!"
+        );
+        (this.email = ""),
           (this.nameSurname = ""),
           (this.phone = ""),
           (this.city = ""),

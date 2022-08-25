@@ -1,7 +1,7 @@
 <template>
-  <div id="slogan-section" >
+  <div id="slogan-section">
     <div class="row container">
-      <div id="slogan-content" >
+      <div id="slogan-content">
         <div class="col">
           <h6 class="d-none d-md-block">we remove the headache from moving</h6>
           <h1>move with ease</h1>
@@ -74,7 +74,7 @@ export default {
 
   #slogan-text {
     font-size: 12px;
-    margin:  0 auto;
+    margin: 0 auto;
   }
 
   #slogan-button {

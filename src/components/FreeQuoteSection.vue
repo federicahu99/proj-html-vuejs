@@ -4,23 +4,22 @@
       <h1>request a free quote</h1>
     </div>
     <div class="container">
-    <BaseForm :countries="countries"/>
+      <BaseForm :countries="countries" />
     </div>
   </div>
 </template>
 
 <script>
-
 import BaseForm from "./BaseForm.vue";
 
 export default {
   name: "FreeQuoteSection",
   components: {
-    BaseForm
+    BaseForm,
   },
   props: {
-    countries: Array
-  }
+    countries: Array,
+  },
 };
 </script>
 

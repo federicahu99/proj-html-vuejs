@@ -109,8 +109,8 @@ export default {
       font-size: 13px;
       transition: 0.4s;
       // effects on header options
-      &:hover ,
-      &:active  {
+      &:hover,
+      &:active {
         margin-left: 5px;
         border-bottom: 1.5px solid $lima;
         font-size: 15px;
@@ -119,9 +119,9 @@ export default {
           font-size: 20px;
         }
       }
-    a {
-      color: $shark;
-    }
+      a {
+        color: $shark;
+      }
     }
     figure {
       width: 140px;

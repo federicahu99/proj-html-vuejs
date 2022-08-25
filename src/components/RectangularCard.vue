@@ -5,6 +5,7 @@
       v-for="(result, i) in results"
       :key="i"
     >
+      <!-- img part -->
       <figure>
         <img
           :src="GetImagine(result)"
@@ -12,6 +13,7 @@
           class="img-fluid"
         />
       </figure>
+      <!-- title and textes -->
       <div class="bg-white">
         <h3>{{ result.title }}</h3>
         <div class="card-text">
