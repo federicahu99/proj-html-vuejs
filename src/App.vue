@@ -75,14 +75,14 @@ export default {
         // three card service section + three btn
         {
           img: "avada-movers-serviceonephoto-final-400x255.jpg",
-          title: "two man lifting",
+          title: "two man lift",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
           btn: "read more",
         },
         {
           img: "avada-movers-servicetwophoto-final-400x255.jpg",
-          title: "we do all the lifting",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam repellat repellendus praesentium, neque tempore harum aspernatur.",
+          title: "we do all the lift",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam debitis laudantium assumenda quam, neque tempore harum aspernatur.",
           btn: "read more",
         },
         {

@@ -17,7 +17,7 @@
         <div class="card-text">
           {{ result.text }}
         </div>
-        <BaseButton :text="result.btn" class="m-4" />
+        <BaseButton :text="result.btn" class="m-5" />
       </div>
     </div>
   </div>

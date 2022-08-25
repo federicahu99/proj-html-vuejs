@@ -20,12 +20,27 @@
           <figure class="col">
             <BaseLogo />
           </figure>
+          <!-- responsive menu header -->
           <ul
-            class="col d-flex justify-content-end align-items-center"
+            class="col d-flex justify-content-end align-items-center nav"
             id="menu-bar"
           >
-            <!-- responsive menu header -->
-            <i class="fa-solid fa-bars d-md-none"></i>
+            <div class="btn-group d-block d-md-none">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>Menu</strong>
+              </button>
+              <ul class="dropdown-menu">
+                <li v-for="(menu, i) in menuHeader" :key="i">
+                  <a class="dropdown-item" href="menu.url">{{ menu.link }}</a>
+                </li>
+              </ul>
+            </div>
+            <!--large viewport display menu-->
             <li
               v-for="(menu, i) in menuHeader"
               :key="i"
@@ -94,11 +109,16 @@ export default {
       font-size: 13px;
       transition: 0.4s;
       // effects on header options
-      &:hover,
-      &:active {
-        border-bottom: 2px solid $lima;
+      &:hover ,
+      &:hover  {
+        margin-left: 5px;
+        border-bottom: 1.5px solid $lima;
         color: $lima;
-        scale: 110%;
+        background-color: #ffffff;
+
+        i {
+          font-size: 20px;
+        }
       }
     }
     a {
@@ -112,6 +132,12 @@ export default {
   #header-button {
     padding-top: 5px;
     font-weight: bolder;
+  }
+
+  //dropdown menu
+
+  #dropdown {
+    border-bottom: none;
   }
 }
 </style>
