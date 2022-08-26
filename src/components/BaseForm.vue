@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form class="row g-3" @keyup.enter="registerRequest">
+    <form class="row g-3" @submit.prevent="registerRequest">
       <div class="col-md-6">
         <!-- email -->
         <label for="inputEmail4" class="form-label m-2">Email</label>
@@ -56,7 +56,7 @@
         </select>
       </div>
       <div class="col-12">
-        <button id="button-quote" class="m-3" @click="registerRequest">
+        <button id="button-quote" class="m-3"  type="button" @click="registerRequest">
           Request an Appoitment
         </button>
       </div>
@@ -81,6 +81,7 @@ export default {
   },
   methods: {
     registerRequest() {
+      
       console.log(
         `Email: ${this.email}, NameSurname: ${this.nameSurname}, Phone: ${this.phone}, City: ${this.city}, State: ${this.state} `
       );
